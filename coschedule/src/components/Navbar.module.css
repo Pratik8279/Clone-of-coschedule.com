@@ -1,0 +1,94 @@
+* {
+  font-family: "MuseoSans";
+  background-color: #f8f8f8;
+}
+#nav {
+  /* height: 80px; */
+  width: 100%;
+  /* border:1px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+#img {
+  height: 50px;
+  width: 200px;
+  object-fit: cover;
+  margin-top: 5px;
+}
+#unit1 {
+  display: flex;
+  gap: 20px;
+  padding: 5px;
+  width: 40%;
+  border: 1px solid red;
+}
+
+#unit2 {
+  display: flex;
+  gap: 20px;
+  padding: 5px;
+  width: 30%;
+}
+#l1 {
+  font-size: 17px;
+  color: #3f3e3e;
+  font-weight: 550;
+}
+#l2 {
+  font-size: 17px;
+  color: #3f3e3e;
+  font-weight: 550;
+}
+#l3 {
+  font-size: 17px;
+  color: #3f3e3e;
+  font-weight: 550;
+}
+#l4 {
+  font-size: 17px;
+  color: #3f3e3e;
+  font-weight: 550;
+}
+
+#l1:hover {
+  color: #f37e5d;
+  cursor: pointer;
+}
+#l2:hover {
+  color: #f37e5d;
+  cursor: pointer;
+}
+#l3:hover {
+  color: #f37e5d;
+  cursor: pointer;
+}
+#l4:hover {
+  color: #f37e5d;
+  cursor: pointer;
+}
+
+#unit2 > div > h4:hover {
+  color: #f37e5d;
+  cursor: pointer;
+}
+#h4 {
+  margin-left: 120px;
+}
+
+#btn {
+  height: 45px;
+  width: 170px;
+  background-color: #f37e5d;
+  border: 1px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+#drop2 {
+  display: none;
+}
+#l2Contain :hover #drop2{
+    display: block;
+}

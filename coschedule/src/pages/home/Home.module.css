@@ -1,0 +1,139 @@
+*{
+    font-family: "MuseoSans";
+}
+
+#h1{
+    font-size: 50px;
+    width: 50%;
+    text-align: center;
+    color: #575252;
+    font-weight: 550;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#p{
+    font-size: 20px;
+    color: #4B4B4B;
+    margin-top: -17px;
+}
+#btn {
+    height: 50px;
+    width: 200px;
+    background-color: #f37e5d;
+    border: 1px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 8px;
+  }
+  #p2{
+    font-size: 15px;
+    color: #7d7979;
+    margin-top: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#img{
+    height: 520px;
+}
+#h2{
+    font-size: 30px;
+    color: #4B4B4B;
+}
+#companies{
+    background-color: white;
+    height: 350px;
+    border:1px solid red;
+}
+#companiesImg1{
+    display: flex;
+    background-color: white;
+    gap:40px;
+    justify-content: center;
+}
+#companiesImg2{
+    display: flex;
+    background-color: white;
+    gap:40px;
+    justify-content: center;
+    margin-top: 40px;
+}
+#prod{
+    font-size: 30px;
+    color: #4B4B4B;
+    margin-top: 80px;
+}
+#carrier1{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 100px;
+}
+#unit1{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 498.45px;
+    width: 500px;
+   
+}
+#pic1{
+    height:120px;
+    width: 500px;
+  object-fit: cover;
+  position: relative;
+}
+#icon1{
+    height: 60px;
+    width: 60px;
+     object-fit: cover;
+     position: absolute;
+     margin-left: -470px;
+     margin-top: 90px;
+}
+#head{
+    font-size: 22px;
+    color: #4B4B4B;
+    text-align: left;
+    padding: 30px;
+}
+#p1{
+    font-size: 17px;
+    color: #4B4B4B;
+    margin-top: -35px;
+    width: 70%;
+    text-align: left;
+   margin-left: 30px;
+}
+#list{
+    line-height: 20px;
+    margin-top: 30px;
+  
+
+}
+#list>p{
+   text-align: left;
+   margin-left: 80px;
+   font-size: 17px;
+   color: #4B4B4B;
+}
+#explore{
+    height: 44.56px;
+    width:143.58px;
+    background-color: #FFEDE3;
+    color:#f37e5d;
+    font-size: 13px;
+    border:1px;
+    margin-right: 270px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#carrier2{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
