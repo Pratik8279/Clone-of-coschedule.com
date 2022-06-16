@@ -1,14 +1,17 @@
-#contain{
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    margin-top:50px;
+* {
+  font-family: "MuseoSans";
+}
+
+#contain {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 #unit1 {
   height: 250px;
   width: 300px;
-
 }
 
 #unit1 > p {
@@ -67,48 +70,57 @@
   color: #474747;
   text-align: left;
 }
-#products2>p{
-    font-size: 14px;
-    color: #787878;
-    text-align: left;
+#products2 > p {
+  font-size: 14px;
+  color: #787878;
+  text-align: left;
 }
-#products3{
-    height: 138px;
-    width: 302px;
+#products3 {
+  height: 138px;
+  width: 302px;
 }
 #products3 > h3 {
-    font-size: 16px;
-    color: #474747;
-    text-align: left;
-  }
-
-  #products3>p{
-    font-size: 14px;
-    color: #787878;
-    text-align: left;
+  font-size: 16px;
+  color: #474747;
+  text-align: left;
 }
-#products4{
-    height: 138px;
-    width: 302px;
-    margin-top: 100px;
+
+#products3 > p {
+  font-size: 14px;
+  color: #787878;
+  text-align: left;
+}
+#products4 {
+  height: 138px;
+  width: 302px;
+  margin-top: 100px;
 }
 #products4 > h3 {
-    font-size: 16px;
-    color: #474747;
-    text-align: left;
-  }
-
-  #products4>p{
-    font-size: 14px;
-    color: #787878;
-    text-align: left;
+  font-size: 16px;
+  color: #474747;
+  text-align: left;
 }
-#foot{
-    margin-top: 100px;
-    border:1px solid red;
-    height: 40px;
-    width: 100%;
-}
-#foot>p{
 
+#products4 > p {
+  font-size: 14px;
+  color: #787878;
+  text-align: left;
+}
+#foot {
+  margin-top: 135px;
+  height: 40px;
+  width: 100%;
+}
+#foot > p {
+  font-size: 16px;
+  color: #787878;
+  text-align: left;
+  margin-left: 130px;
+}
+#foot > p > a {
+  font-size: 16px;
+  color: #787878;
+}
+#foot > p > a:hover {
+  color: black;
 }

@@ -94,7 +94,7 @@ function Footer() {
             </div>
     </div>
         <div id= {styles.foot}>
-             <p>© Copyright 2022, all rights reserved. See our Terms & Policies</p>
+             <p>© Copyright 2022, all rights reserved. See our <a href="">Terms & Policies</a> </p>
         </div>
     </>
   )

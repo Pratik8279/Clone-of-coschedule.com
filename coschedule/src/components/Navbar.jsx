@@ -1,15 +1,17 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
 function Navbar() {
+  const navigate= useNavigate();
   return (
     <div id={styles.nav}>
       <div id={styles.unit1}>
-        <img
+       <Link to= "/"> <img
           id={styles.img}
           src="https://mma.prnewswire.com/media/846690/CoSchedule_Logo.jpg?p=twitter"
           alt=""
-        />
+        /></Link>
         <div>
           <h4 id={styles.l1}>Products</h4>
           {/* <div>
@@ -33,20 +35,20 @@ function Navbar() {
           <h4 id={styles.l3}>Resources</h4>
         </div>
         <div>
-          <h4 id={styles.l}>Pricing</h4>
+          <h4 id={styles.l4}>Pricing</h4>
         </div>
       </div>
 
       <div id={styles.unit2}>
         <div>
-          <h4 id={styles.h4}>Sign In</h4>
+       <h4 onClick={()=> navigate("/signin")} id={styles.h4}>Sign In</h4>
         </div>
 
         <div>
           <h4>Get A Demo</h4>
         </div>
 
-        <button id={styles.btn}>Create My Calendar</button>
+        <button onClick= {()=> navigate("/calendar")} id={styles.btn}>Create My Calendar</button>
       </div>
     </div>
   );

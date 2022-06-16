@@ -20,7 +20,7 @@
   gap: 20px;
   padding: 5px;
   width: 40%;
-  border: 1px solid red;
+
 }
 
 #unit2 {
@@ -66,7 +66,11 @@
   color: #f37e5d;
   cursor: pointer;
 }
-
+#unit2 > div > h4{
+  font-size: 17px;
+  color: #3f3e3e;
+  font-weight: 550;
+}
 #unit2 > div > h4:hover {
   color: #f37e5d;
   cursor: pointer;

@@ -1,0 +1,59 @@
+* {
+    font-family: "MuseoSans";
+ 
+  }
+#h1{
+    font-size: 40px;
+    color: #4B4B4B;
+}
+#p{
+    font-size: 16px;
+    margin-top: -20px;
+    color: #837d7d;
+}
+#form{
+    height: 600px;
+    width: 550px;
+    border:1px solid white;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    margin-bottom: 100px;
+}
+#form>input{
+    height:40px;
+    width: 450px;
+    margin-top: -15px;
+    border:1px solid rgb(195, 186, 186);
+    background-color: #FFFFFF;
+}
+#form>button{
+    height: 52px;
+    width: 200px;
+    margin-top: 30px;
+    background-color:  #f9bfae;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    border:1px ;
+    margin-left: 250px;
+}
+
+#form>p{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #837d7d;
+    text-align: left;
+    margin-left: 47px;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+}
+
+#item{
+    margin-bottom: 50px;
+}
+#form>p>a{
+    color: #837d7d;
+}

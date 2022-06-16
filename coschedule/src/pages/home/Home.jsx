@@ -1,15 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
-
+import { Link, useNavigate } from 'react-router-dom';
 import styles from "./Home.module.css";
-
+  
 function Home() {
+  const navigate = useNavigate();
   return (
      <>
         <h1 id= {styles.h1}>Organize All Of Your Marketing In One Place. From Any Place.</h1>
         <p id= {styles.p}>Get more done in less time with the only work management software for marketers.</p>
-        <Link to= ""><button id= {styles.btn}>Get Started Free</button></Link>
+        <Link to= "/calendar"><button id= {styles.btn}>Get Started Free</button></Link>
        <p id= {styles.p2}>Why not? It's free forever.</p>
 
        <img id= {styles.img} src='https://coschedule.com/_next/image?url=%2Fimg%2Fhome%2Fhome-calendar.png&w=1200&q=75'/>
@@ -124,7 +123,7 @@ function Home() {
 
        <div id= {styles.start}>
                <h2>Organize all of your marketing in one place</h2>
-               <button>Get Started Free</button>
+               <button onClick={()=> navigate("/calendar")}>Get Started Free</button>
        </div>
   
     </>
