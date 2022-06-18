@@ -1,9 +1,11 @@
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import styles from "./Pricing.module.css"
 function Pricing() {
+     const navigate= useNavigate();
   return (
-    <div>
-        <img id= {styles.img} src="https://mma.prnewswire.com/media/846690/CoSchedule_Logo.jpg?p=twitter" alt="" />
+    <div id= {styles.main}>
+     <Link to= "/"><img id= {styles.img} src="https://mma.prnewswire.com/media/846690/CoSchedule_Logo.jpg?p=twitter" alt="" /></Link> 
         <h1 id= {styles.h1}>Choose Your All-In-One Marketing Calendar</h1>
         <p id= {styles.p}>Create your calendar free today. No credit card required</p>
 
@@ -31,6 +33,8 @@ function Pricing() {
                        <hr />
                        <a href="">See all features</a>
                </div>
+    {/* <img id= {styles.priceImg} src= "https://coschedule.com/img/pricing/mc-free-badge-01.png"/> */}
+
 
                            {/* second box */}
 
@@ -62,7 +66,12 @@ function Pricing() {
 
                <div id= {styles.price3}>
                <hr id= {styles.hr}/>
-                    <h4>PRO</h4>
+                     <div id= {styles.colors}>
+                           <div id= {styles.orange}></div>
+                           <div id= {styles.dark}></div>
+                           <div id= {styles.violet}></div>
+                           <div id= {styles.blue}></div>
+                     </div>
                     <h2>Marketing Suite</h2>
                     <p id= {styles.p2}>A family of agile marketing products that helps you coordinate your process, projects, and teams.</p>
                        <p id= {styles.talk}>Lets Talk</p>
@@ -89,6 +98,19 @@ function Pricing() {
                        <hr />
                        <a href="">See all features</a>
                </div>
+        </div>
+
+        <div id= {styles.auth}>
+              <p id= {styles.para}>"Before CoSchedule, everything was scattered between email and spreadsheets. Now I can easily organize all of my marketing and keep everyone on the same page."</p>
+                <div id= {styles.div}>
+                    <img src="https://coschedule.com/img/testimonials/beverly-cook.jpeg" alt="" />
+                    <div>
+                    <p>Beverly Cook,</p>
+                    <p>NYC Leadership Center</p>
+                    </div>
+                 
+                </div>
+               
         </div>
     </div>
   )

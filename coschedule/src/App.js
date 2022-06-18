@@ -7,6 +7,7 @@ import Signin from './pages/Signin/Signin';
 import Register from './pages/Signin/Register';
 import Calendar from './pages/calendar/Calendar';
 import Pricing from './pages/pricing/Pricing';
+import AddSchedule from './pages/addShedule/AddSchedule';
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
       {/* <Navbar/>
        <AllRoutes/>
        <Footer/> */}
-       <Pricing/>
+       <Navbar/>
+       <AddSchedule/>
+       <Footer/>
     </div>
   );
 }

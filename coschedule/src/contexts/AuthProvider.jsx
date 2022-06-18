@@ -5,13 +5,17 @@ export const AuthContext = createContext();
 function AuthProvider({children}) {
     const [token,setToken] = useState("");
     const check = useSelector((state)=>state.auth.token);
-
+    console.log(check)
     useEffect(()=>{
         setToken(check)
     },[check])
 
+   const logout = ()=>{
+    setToken("")
+   }
+
   return (
-   <AuthContext.Provider value= {{token}}>
+   <AuthContext.Provider value= {{token,logout}}>
      {children}
    </AuthContext.Provider>
   )

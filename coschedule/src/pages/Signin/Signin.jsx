@@ -7,18 +7,18 @@ import { AuthContext } from '../../contexts/AuthProvider';
 
 function Signin() {
   const {token} = useContext(AuthContext);
-  
+  console.log(token)
   const [formData,setFormData] = useState({})
   const navigate= useNavigate();
   const location = useLocation();
-  const from = location?.state?.from?.pathname || "/calendar";
+  const from = location?.state?.from?.pathname || "/schedule";
   const dispatch= useDispatch();
 
   useEffect(()=>{
-    if(token){
-      navigate(from ,{ replace:true})
+    if(token == "QpwL5tke4Pnpja7X4"){
+      navigate(from ,{replace:true})
     }
-  },[token])
+  },[token ])
    const handleChange= (e)=>{
          let inputName = e.target.name;
        setFormData({

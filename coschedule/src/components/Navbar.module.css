@@ -20,7 +20,6 @@
   gap: 20px;
   padding: 5px;
   width: 40%;
-
 }
 
 #unit2 {
@@ -48,6 +47,7 @@
   font-size: 17px;
   color: #3f3e3e;
   font-weight: 550;
+  text-decoration: none;
 }
 
 #l1:hover {
@@ -66,7 +66,7 @@
   color: #f37e5d;
   cursor: pointer;
 }
-#unit2 > div > h4{
+#unit2 > div > h4 {
   font-size: 17px;
   color: #3f3e3e;
   font-weight: 550;
@@ -90,9 +90,238 @@
   border-radius: 5px;
   margin-top: 8px;
 }
-#drop2 {
-  display: none;
+/* drop2 */
+
+#l2Contain {
+  position: relative;
 }
-#l2Contain :hover #drop2{
-    display: block;
+#drop2 {
+  height: 200px;
+  width: 300px;
+  background-color: white;
+  padding: 10px;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#drop2 > div {
+  background-color: white;
+}
+#drop2 > div > h4 {
+  font-size: 16px;
+  color: #2f2f2f;
+  background-color: white;
+  text-align: left;
+  margin-left: 30px;
+}
+
+#drop2 > div > p {
+  font-size: 14px;
+  color: #615e5e;
+  width: 60%;
+  margin-top: -10px;
+  background-color: white;
+  text-align: left;
+  margin-left: 30px;
+}
+#l2:hover + #drop2 {
+  display: block;
+  transition-delay: 2s;
+}
+#drop2Contain {
+  height: auto;
+  width: 100%;
+  border: 1px solid red;
+}
+
+/* drop 1 */
+#drop1 {
+  height: 270px;
+  width: 650px;
+  display: flex;
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+}
+#sectionOne {
+  height: 260px;
+  width: 50%;
+  background-color: white;
+}
+
+#sectionOne > div {
+  display: flex;
+  width: 100%;
+  /* width: 50%; */
+  background-color: white;
+}
+#sectionOne>div>div{
+  background-color: white;
+}
+#sectionOne > div > img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  margin-top: 35px;
+  margin-left: 10px;
+}
+#sectionOne > div > div > h4 {
+  font-size: 22px;
+  text-align: left;
+  margin-left: 10px;
+  background-color: white;
+}
+#sectionOne > div > div > p {
+  font-size: 14px;
+  color: #928a8a;
+  text-align: left;
+  margin-top: -15px;
+  margin-left: 10px;
+  background-color: white;
+}
+#sectionTwo {
+  height: 260px;
+  width: 50%;
+  border: 1px solid white;
+  background-color: white;
+}
+#sectionTwo>div{
+  background-color: white;
+}
+#sectionTwo > div > div {
+  display: flex;
+  background-color: white;
+}
+#sectionTwo > div > div > img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  margin-top: -5px;
+}
+#sectionTwo > div > h5 {
+  font-size: 14px;
+  color: gray;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 20px;
+  background-color: white;
+}
+#sectionTwo > div > div > h5 {
+  font-size: 16px;
+  color: #2f2f2f;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-left: 10px;
+  background-color: white;
+}
+#l1:hover + #drop1 {
+  display: block;
+  display: flex;
+  transition-delay: 2s;
+}
+
+/* drop3 */
+
+#drop3 {
+  height: 370px;
+  width: 800px;
+  display: flex;
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  justify-content: center;
+  background-color: white;
+}
+#sec1 {
+  width: 30%;
+  background-color: white;
+}
+#sec1>div{
+  background-color: white;
+}
+#sec1 > h5 {
+  font-size: 16px;
+  text-align: left;
+  color: #2f2f2f;
+  margin-left: 20px;
+  background-color: white;
+}
+#sec1 > div > h5 {
+  font-size: 16px;
+  color: #2f2f2f;
+  text-align: left;
+  margin-left: 20px;
+  background-color: white;
+}
+#sec1 > div > p {
+  font-size: 14px;
+  color: #928a8a;
+  text-align: left;
+  width: 95%;
+  margin-top: -15px;
+  margin-left: 20px;
+  background-color: white;
+}
+#sec2 {
+  border: 0.5px solid #d5cfcf;
+  height: 350px;
+  align-items: center;
+  margin-left: 30px;
+  background-color: white;
+}
+#sec3 {
+  width: 30%;
+  background-color: white;
+}
+#sec3 > div > h5 {
+  font-size: 16px;
+  text-align: left;
+  color: #2f2f2f;
+  margin-left: 20px;
+  background-color: white;
+}
+#sec3>div{
+  background-color: white;
+}
+#sec3 > div > p {
+  font-size: 15px;
+  color: #928a8a;
+  text-align: left;
+  width: 95%;
+  margin-top: 0px;
+  margin-left: 20px;
+  background-color: white;
+}
+
+#sec4 {
+  width: 30%;
+  background-color: white;
+}
+#sec4>div{
+  background-color: white;
+}
+#sec4 > div > h5 {
+  font-size: 16px;
+  text-align: left;
+  color: #2f2f2f;
+  margin-left: 20px;
+  background-color: white;
+}
+#sec4 > div > p {
+  font-size: 15px;
+  color: #928a8a;
+  text-align: left;
+  width: 95%;
+  margin-top: 0px;
+  margin-left: 20px;
+  background-color: white;
+}
+#l3:hover + #drop3 {
+  display: block;
+  display: flex;
+  transition-delay: 2s;
 }

@@ -1,6 +1,7 @@
 * {
   font-family: "MuseoSans", "sans-serif";
 }
+
 #img {
   height: 50px;
   width: 200px;
@@ -19,14 +20,15 @@
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-top:60px;
+  margin-top: 60px;
+  height:1230px;
 }
 #price1 {
   height: 770px;
   width: 360px;
-  /* border:1px solid red; */
   background-color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 #price1 > h4 {
   font-size: 14px;
@@ -107,13 +109,24 @@ a {
   width: 356px;
 }
 
+/* #priceImg{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  object-fit :fill;
+  top: 250px;
+  margin-left: -250px;
+ 
+} */
+
 /* second box */
 #price2 {
   height: 900px;
   width: 360px;
   /* border:1px solid red; */
   background-color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 #price2 > h4 {
   font-size: 14px;
@@ -139,53 +152,125 @@ a {
   margin-top: -30px;
   background-color: #ffffff;
 }
-#price2>#pContain>p{
-    width: 70%;
+#price2 > #pContain > p {
+  width: 70%;
 }
 /* third box */
 #price3 {
-    height: 1140px;
-    width: 360px;
-    /* border:1px solid red; */
-    background-color: #ffffff;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-  }
-  #price3 > h4 {
-    font-size: 14px;
-    margin-top: 40px;
-    color: #f37e5d;
-    background-color: #ffffff;
-  }
-  #price3 > h2 {
-    font-size: 28px;
-    color: #4b4b4b;
-    margin-top: -10px;
-    background-color: #ffffff;
-  }
-  #price3 > h1 {
-    font-size: 50px;
-    color: #4b4b4b;
-    margin-top: 50px;
-    background-color: #ffffff;
-  }
-  #price3 > h3 {
-    font-size: 21px;
-    color: #4b4b4b;
-    margin-top: -30px;
-    background-color: #ffffff;
-  }
-  #talk{
-    font-size: 35px;
-    color: #4b4b4b;
-    background-color: #ffffff;
-  }
-  #btn2{
-    height: 60px;
+  height: 1140px;
+  width: 360px;
+  /* border:1px solid red; */
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+#colors{
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 40px;
+  background-color: #ffffff;
+}
+#orange{
+  height: 12px;
+  width: 12px;
+  background-color: #e19985;
+}
+#dark{
+  height: 12px;
+  width: 12px;
+  background-color: #cc5736;
+}
+#violet{
+  height: 12px;
+  width: 12px;
+  background-color: rgb(176, 79, 209);
+}
+#blue{
+  height: 12px;
+  width: 12px;
+  background-color: rgb(0, 123, 255);
+}
+#price3 > h4 {
+  font-size: 14px;
+  margin-top: 40px;
+  color: #f37e5d;
+  background-color: #ffffff;
+}
+#price3 > h2 {
+  font-size: 28px;
+  color: #4b4b4b;
+  margin-top: 10px;
+  background-color: #ffffff;
+}
+#price3 > h1 {
+  font-size: 50px;
+  color: #4b4b4b;
+  margin-top: 50px;
+  background-color: #ffffff;
+}
+#price3 > h3 {
+  font-size: 21px;
+  color: #4b4b4b;
+  margin-top: -30px;
+  background-color: #ffffff;
+}
+#talk {
+  font-size: 35px;
+  color: #4b4b4b;
+  background-color: #ffffff;
+}
+#btn2 {
+  height: 60px;
   width: 230px;
   color: #f37e5d;
-  border:2px solid #f37e5d;
+  border: 2px solid #f37e5d;
   font-size: 16px;
   font-weight: bold;
   border-radius: 5px;
   margin-top: 70px;
-  }
+}
+
+/* FAQ */
+#auth{
+   height:300px;
+   width: 100%;
+   background-color: #ffffff;
+   border:1px solid white;
+}
+#para{
+  font-family: merriweather;
+  font-size: 22px;
+  color: #787878;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 80px;
+  background-color: #ffffff;
+}
+#div{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+#div>img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#div>div{
+  background-color: #ffffff;
+}
+#div>div>p{
+  font-size: 14px;
+  color: #787878;
+  line-height: 10px;
+  text-align: left;
+  margin-left: 10px;
+  background-color: #ffffff;
+}

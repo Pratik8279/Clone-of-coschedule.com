@@ -1,0 +1,141 @@
+#main {
+  display: flex;
+}
+#sidebar {
+  height: 900px;
+  width: 7%;
+
+}
+*{
+    font-family: "MuseoSans";
+}
+#sidebar > div > img {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+}
+#unit {
+  height: 900px;
+  width: 93%;
+  display: flex;
+ 
+}
+#unit1 {
+  height: 900px;
+  border:1px solid gray;
+  width: 70%;
+}
+#unit1>h4{
+    font-size: 25px;
+    color: rgb(169, 169, 169);
+    margin-top:180px;
+}
+#unit1>p{
+    font-size: 18px;
+    color: gray;
+    width:20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: -10px;
+}
+#circle{
+    border-radius: 50%;
+    border: 1px solid rgb(169, 169, 169);;
+    height:50px;
+     width:50px;
+     justify-content: center;
+     margin: auto;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#circle>img{
+    height:30px;
+    width:30px;
+    object-fit: cover;
+   margin-top: 10px;
+}
+#iconContain{
+    height:240px;
+     width:600px;
+     margin: auto;
+     margin-top:20px;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#first{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+#first>div{
+    height:90px;
+    width:120px;
+    margin-top: 10px;
+}
+#first>div>img{
+    height:30px;
+     width:30px;
+      object-fit: cover;
+      margin-top: 10px;
+}
+#first>div>p{
+    color: gray;
+}
+#first>div:hover{
+    border:2px solid rgb(114, 159, 180);
+}
+
+
+#second{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top:10px;
+}
+#second>div{
+    height:90px;
+    width:120px;
+    margin-top: 10px;
+}
+#second>div>img{
+    height:30px;
+     width:30px;
+      object-fit: cover;
+      margin-top: 10px;
+}
+#second>div>p{
+    color: gray;
+}
+#second>div:hover{
+    border:2px solid rgb(114, 159, 180);
+}
+
+/* todos  */
+#todoContain{
+    width:30%;
+    border:1px solid yellow;
+}
+#todoContain>h4{
+    font-size: 17px;
+     color: gray;
+text-align: center;
+
+} 
+#todoContain>input{
+    height:22px;
+    width:250px;
+  margin: auto;
+   border:0px ;
+}
+#todoContain>input:focus{
+   border:1px solid gray;
+}
+#todoContain>input::placeholder{
+font-size: 20px;
+ }
+ 
+#p{
+    font-size: 14px;
+    color: gray;
+    margin-top: 0px;
+    margin-left:-180px;
+}

@@ -25,6 +25,7 @@ export const get_auth = (formData) => async(dispatch) =>{
                 })
             })
             let data= await res.json();
+           
             dispatch(auth_success(data.token))
         } catch (error) {
             dispatch(auth_failure());

@@ -1,35 +1,36 @@
-import { AUTH_FAILURE, AUTH_REQUEST, AUTH_SUCCESS } from "./actionTypes"
+import { TODO_FAILURE, TODO_REQUEST, TODO_SUCCESS } from "./actionTypes"
+
 
 const initState= {
     loading: false,
     error: false,
-    token: []
+     data: []
 }
 
-export const authReducer = (state = initState,action) =>{
+export const todoReducer = (state = initState,action) =>{
     switch(action.type){
-        case AUTH_REQUEST:{
+        case TODO_REQUEST:{
             return {
                 ...state,
                 loading: true,
                 error: false,
-                token: []
+               data: []
             }
         }
-        case AUTH_SUCCESS:{
+        case TODO_SUCCESS:{
             return {
                 ...state,
                 loading: false,
                 error: false,
-                token: action.payload
+         
             }
         }
-        case AUTH_FAILURE:{
+        case TODO_FAILURE:{
             return {
                 ...state,
                 loading: false,
                 error: true,
-                token: []
+               data: []
             }
         }
         default : {
