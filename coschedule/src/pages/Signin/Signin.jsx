@@ -1,13 +1,15 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import styles from "./Signin.module.css";
-import { useDispatch } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { get_auth } from '../../redux/auth/actions';
 import { AuthContext } from '../../contexts/AuthProvider';
 
 function Signin() {
   const {token} = useContext(AuthContext);
   console.log(token)
+  const loading = useSelector((state)=> state.auth.loading)
+  const error = useSelector((state)=> state.auth.error)
   const [formData,setFormData] = useState({})
   const navigate= useNavigate();
   const location = useLocation();
@@ -18,7 +20,7 @@ function Signin() {
     if(token == "QpwL5tke4Pnpja7X4"){
       navigate(from ,{replace:true})
     }
-  },[token ])
+  },[token])
    const handleChange= (e)=>{
          let inputName = e.target.name;
        setFormData({
@@ -31,6 +33,8 @@ function Signin() {
         e.preventDefault();
         dispatch(get_auth(formData))
    }
+   if(loading)return <h3 style= {{color: "gray"}}>Loading ...</h3>
+   if(error) return <div>Something Went Wrong here...</div>
   return (
     <div id= {styles.main} onSubmit= {handleSubmit}>  
           <form id= {styles.form}>

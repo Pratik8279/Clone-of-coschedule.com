@@ -1,4 +1,4 @@
-import { TODO_FAILURE, TODO_REQUEST, TODO_SUCCESS } from "./actionTypes"
+import { GET_FAILURE, GET_REQUEST, GET_SUCCESS, TODO_FAILURE, TODO_REQUEST, TODO_SUCCESS } from "./actionTypes"
 
 export const todo_request = () =>({
     type: TODO_REQUEST
@@ -29,4 +29,32 @@ export const post_todo = (text) => async(dispatch) =>{
         } catch (error) {
             dispatch(todo_failure());
         }
+}
+
+// Get the todos data
+
+export const get_request = () =>({
+    type: GET_REQUEST
+})
+
+export const get_success = (data) =>({
+    type: GET_SUCCESS,
+    payload: data
+    
+})
+
+export const get_failure = () =>({
+    type: GET_FAILURE
+})
+
+export const get_todoData= ()=> async(dispatch)=> {
+    dispatch(get_request());
+    try {
+        let res= await fetch("http://localhost:8080/todo");
+        let data= await res.json();
+        // console.log(data)
+        dispatch(get_success(data))
+    } catch (error) {
+         dispatch(get_failure())
+    }
 }

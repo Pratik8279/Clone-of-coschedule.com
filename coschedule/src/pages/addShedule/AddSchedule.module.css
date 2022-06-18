@@ -13,6 +13,7 @@
   height: 30px;
   width: 30px;
   object-fit: cover;
+  margin-top:50px;
 }
 #unit {
   height: 900px;
@@ -112,7 +113,7 @@
 /* todos  */
 #todoContain{
     width:30%;
-    border:1px solid yellow;
+
 }
 #todoContain>h4{
     font-size: 17px;
@@ -137,5 +138,14 @@ font-size: 20px;
     font-size: 14px;
     color: gray;
     margin-top: 0px;
-    margin-left:-180px;
+    margin-left: 100px;
+    text-align: left;
+ 
+}
+#item{
+    font-size: 14px;
+    color: gray;
+    margin-top: 0px;
+    margin-left: 100px;
+    text-align: left;
 }

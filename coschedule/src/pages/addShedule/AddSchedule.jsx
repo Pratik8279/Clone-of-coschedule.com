@@ -1,13 +1,39 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { get_todoData, post_todo } from '../../redux/todo/actions'
 import styles from "./AddSchedule.module.css"
 import Product from './Sidebar'
 
 function AddSchedule() {
+  const [text,setText] = useState("")
+  const data= useSelector((state)=>state.todo.data);
+  const error= useSelector((state)=>state.todo.error);
+  const loading= useSelector((state)=>state.todo.loading);
+  const navigate= useNavigate();
+  console.log(data)
+    const dispatch = useDispatch();
+   useEffect(()=>{
+      dispatch(get_todoData())
+   },[])
+
+   const handleChange= (e)=>{
+      setText(e.target.value)
+   }
+  
+   const handleClick = ()=>{
+      dispatch(post_todo(text)).then(()=>{
+        dispatch(get_todoData())
+      })
+   }
+
+    if(error)return <div>Something Went Wrong here...</div>
   return (
     <div id= {styles.main}>
           <div id= {styles.sidebar}>
             <div>
-            <img src="https://www.vhv.rs/dpng/d/408-4088622_senior-care-icon-grey-transparent-home-icon-hd.png" alt="" />
+            <img  onClick={()=>navigate("/")}  src="https://www.vhv.rs/dpng/d/408-4088622_senior-care-icon-grey-transparent-home-icon-hd.png" alt="" />
             </div>
             <div>
             <img src="https://icones.pro/wp-content/uploads/2021/03/icone-de-calendrier-gris.png" alt="" />
@@ -65,9 +91,16 @@ function AddSchedule() {
 
                   <div id= {styles.todoContain}>
                         <h4>Tasks</h4>
-                       
-                      <input type="text" placeholder='New task...'/>
-                      <p id= {styles.p}>+Schedule</p>
+                          <div>
+                              {data.map((item)=>(
+                                <>
+                                   {loading && <div>Loading...</div>}
+                                  <p id={styles.item}>{item.id}. --  {item.title}</p>
+                                  </>
+                              ))}
+                          </div>
+                      <input type="text" placeholder='New task...' onChange= {handleChange}/>
+                      <p onClick={handleClick} id= {styles.p}>+Schedule</p>
         
 
                   </div>

@@ -8,16 +8,15 @@ import Register from './pages/Signin/Register';
 import Calendar from './pages/calendar/Calendar';
 import Pricing from './pages/pricing/Pricing';
 import AddSchedule from './pages/addShedule/AddSchedule';
+import Schedule from './pages/schedule/Schedule';
 
 function App() {
   return (
     <div className="App">
-      {/* <Navbar/>
+      <Navbar/>
        <AllRoutes/>
-       <Footer/> */}
-       <Navbar/>
-       <AddSchedule/>
        <Footer/>
+
     </div>
   );
 }

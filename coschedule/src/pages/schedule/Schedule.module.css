@@ -1,0 +1,104 @@
+* {
+  font-family: "MuseoSans";
+}
+#main {
+  display: flex;
+  height:800px;
+}
+#sidebar {
+  height: 800px;
+  width: 7%;
+  border: 1px solid red;
+}
+#sidebar > div > img {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  margin-top: 50px;
+}
+#show{
+    display: grid;
+    grid-template-columns: repeat(7,202px);
+    grid-template-rows: repeat(4,200px);
+}
+#show>div{
+     border:1px solid gray;
+}
+#show>div>p{
+    text-align: left;
+    margin-left:10px;
+    margin-top:0px;
+    color:gray
+}
+#anotherShow{
+    display: flex;
+}
+#work{
+    display: flex;
+}
+#first{
+    height:200px;
+    width: 200px;
+    border:1px solid gray;
+}
+#first>p{
+    text-align: left;
+    margin-left:10px;
+    margin-top:0px;
+    color:gray
+}
+#first>h2{
+    margin-top:-30px;
+    margin-left:150px;
+    display: none;
+}
+#first:hover h2{
+    display: block;
+    cursor: pointer;
+}
+#second{
+    height:200px;
+    width: 200px;
+    border:1px solid gray;
+}
+#second>p{
+    text-align: left;
+    margin-left:10px;
+    margin-top:0px;
+    color:gray
+}
+#second>h2{
+    margin-top:-30px;
+    margin-left:150px;
+    display: none;
+}
+#second:hover h2{
+    display: block;
+    cursor: pointer;
+}
+#anotherShow>div{
+    height:200px;
+    width: 200px;
+    border:1px solid gray;
+}
+#anotherShow>div>p{
+    text-align:left;
+    margin-left:10px;
+    margin-top:0px;
+    color:gray;
+
+}
+#anotherShow>div>h2{
+    margin-top:-30px;
+    margin-left:150px;
+    display: none;
+}
+#anotherShow>div:hover h2{
+    display: block;
+    cursor: pointer;
+}
+#list{
+   text-align: center;
+   color:gray;
+   margin-left: 100px;
+}
