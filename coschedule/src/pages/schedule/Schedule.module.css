@@ -8,17 +8,18 @@
 #sidebar {
   height: 800px;
   width: 7%;
-  border: 1px solid red;
+  
 }
 #sidebar > div > img {
   height: 30px;
   width: 30px;
   object-fit: cover;
   margin-top: 50px;
+  cursor: pointer;
 }
 #show{
     display: grid;
-    grid-template-columns: repeat(7,202px);
+    grid-template-columns: repeat(7,201.7px);
     grid-template-rows: repeat(4,200px);
 }
 #show>div{
@@ -40,6 +41,8 @@
     height:200px;
     width: 200px;
     border:1px solid gray;
+   box-sizing: border-box;
+   overflow: scroll;
 }
 #first>p{
     text-align: left;

@@ -95,7 +95,7 @@ function AddSchedule() {
                               {data.map((item)=>(
                                 <>
                                    {loading && <div>Loading...</div>}
-                                  <p id={styles.item}>{item.id}. --  {item.title}</p>
+                                  <p id={styles.item}>{item.id}.  {item.title}</p>
                                   </>
                               ))}
                           </div>
