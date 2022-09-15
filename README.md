@@ -1,3 +1,2 @@
 # Clone-of-coschedule.com
-It is a clone of website name Coschedule.com. Coschedule is a all in one platform for planning,organizing,and executing all the things related to event management and for making this website I have used HTML, CSS, React.js, and Redux . Features of website are : 1. Sign-in functionality with authentication 2. frontend architecture of website 3. tracking of tasks related to your project on the basis of day 4. calendar representation of all the tasks of projects
 For Authentication in the Website I have used reqres.com so please use "eve.holt@reqres.in" as a username and "cityslicka" as a password.
