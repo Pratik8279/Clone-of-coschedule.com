@@ -2,18 +2,20 @@
 import React, { useContext } from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../contexts/AuthProvider'
+import { get_todoData } from '../../redux/todo/actions'
 import styles from "./Schedule.module.css"
 
 
 function Schedule() {
-  const {logout} = useContext(AuthContext)
+  const {logout} = useContext(AuthContext);
+  const dispatch = useDispatch()
   const data= useSelector((state)=>state.todo.data);
 
   useEffect(()=>{
-      
+      dispatch(get_todoData())
   },[])
 
 
