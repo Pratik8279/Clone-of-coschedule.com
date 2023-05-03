@@ -92,10 +92,10 @@ function AddSchedule() {
                   <div id= {styles.todoContain}>
                         <h4>Tasks</h4>
                           <div>
-                              {data.map((item)=>(
+                              {data.map((item,index)=>(
                                 <>
                                    {loading && <div>Loading...</div>}
-                                  <p id={styles.item}>{item.id}.  {item.title}</p>
+                                  <p id={styles.item}>{index+1}.  {item.title}</p>
                                   </>
                               ))}
                           </div>

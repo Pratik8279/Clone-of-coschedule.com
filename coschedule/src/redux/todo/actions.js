@@ -16,7 +16,7 @@ export const todo_failure = () =>({
 export const post_todo = (text) => async(dispatch) =>{
     dispatch(todo_request())
         try {
-            let res= await fetch("https://json-files.herokuapp.com/todo",{
+            let res= await fetch("https://angry-dog-kerchief.cyclic.app/todo",{
                 method: "POST",
                 headers: { "Content-Type" : "application/json"},
                 body : JSON.stringify({
@@ -50,7 +50,7 @@ export const get_failure = () =>({
 export const get_todoData= ()=> async(dispatch)=> {
     dispatch(get_request());
     try {
-        let res= await fetch("https://json-files.herokuapp.com/todo");
+        let res= await fetch("https://angry-dog-kerchief.cyclic.app/todo");
         let data= await res.json();
         // console.log(data)
         dispatch(get_success(data))
